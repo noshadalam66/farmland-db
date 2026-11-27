@@ -25,11 +25,11 @@ docker compose exec -T db psql -v ON_ERROR_STOP=1 -U farmland -d farmland < migr
 The schema holds one starter plot per Firebase UID, its wheat inventory and
 revision, and successful command receipts for safe retries.
 
-## World selection migration
+Apply `000005_crop_variety.sql` for wheat, corn, and rice. It retains existing
+planted plots as wheat and starts new inventory counters at zero.
 
-Apply `000003_world_requests.sql` after the starter farm migration. It stores
-one world selection per Firebase account and indexes queued generation requests.
-Coordinates represent the center of the selected area in WGS 84.
+Apply `000006_crop_market.sql` for the coin balance and wallet entries. Each
+sale references its successful farm command receipt.
 
-Apply `000004_terrain_generation.sql` next. It adds worker leases and records
-the completed artifact or failure for each request.
+Apply `000007_farm_expansion.sql` for the pilot expansion plot, plot-aware
+command receipts, and parcel purchase debits.
