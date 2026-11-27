@@ -48,3 +48,6 @@ inventory, and mill and flour entries in the wallet ledger.
 
 Apply `000012_harvest_leaderboard.sql` to store opt-in settings and index
 successful harvest commands for ranking.
+
+Apply `000013_starter_town.sql` for the initial road and cottage records.
+Their construction timestamps are the source for server-time population.
