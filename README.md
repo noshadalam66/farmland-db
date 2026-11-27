@@ -39,3 +39,6 @@ chickens and track animal purchase debits.
 
 Apply `000009_animal_production.sql` for per-animal growth timers and
 milk and egg inventory.
+
+Apply `000010_breeding.sql` to store animal sex, parent IDs, maturation,
+and pending breeding reservations.
