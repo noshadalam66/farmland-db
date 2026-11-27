@@ -30,3 +30,6 @@ planted plots as wheat and starts new inventory counters at zero.
 
 Apply `000006_crop_market.sql` for the coin balance and wallet entries. Each
 sale references its successful farm command receipt.
+
+Apply `000007_farm_expansion.sql` for the pilot expansion plot, plot-aware
+command receipts, and parcel purchase debits.
