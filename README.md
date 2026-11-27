@@ -24,3 +24,6 @@ docker compose exec -T db psql -v ON_ERROR_STOP=1 -U farmland -d farmland < migr
 
 The schema holds one starter plot per Firebase UID, its wheat inventory and
 revision, and successful command receipts for safe retries.
+
+Apply `000005_crop_variety.sql` for wheat, corn, and rice. It retains existing
+planted plots as wheat and starts new inventory counters at zero.
