@@ -54,3 +54,6 @@ Their construction timestamps are the source for server-time population.
 
 Apply `000014_town_services.sql` to permit water towers, workshops, schools,
 and clinics in the existing town and command tables.
+
+Apply `000015_town_orders.sql` for daily settlement supply order receipts
+and wallet payouts. A unique index enforces one completion per offer per UTC day.
