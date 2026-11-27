@@ -27,3 +27,6 @@ revision, and successful command receipts for safe retries.
 
 Apply `000005_crop_variety.sql` for wheat, corn, and rice. It retains existing
 planted plots as wheat and starts new inventory counters at zero.
+
+Apply `000006_crop_market.sql` for the coin balance and wallet entries. Each
+sale references its successful farm command receipt.
