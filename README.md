@@ -36,3 +36,6 @@ command receipts, and parcel purchase debits.
 
 Apply `000008_livestock.sql` to store individually identified goats and
 chickens and track animal purchase debits.
+
+Apply `000009_animal_production.sql` for per-animal growth timers and
+milk and egg inventory.
