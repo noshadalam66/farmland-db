@@ -13,3 +13,14 @@ docker compose exec -T db psql -U farmland -d farmland -c 'SELECT PostGIS_Versio
 The Compose credentials are for local development. Use a dedicated migration identity with extension permissions on production databases. Apply migrations in numeric order and add a new migration for each schema change.
 
 Open pull requests against `main` after the initial bootstrap.
+
+## Starter farm migration
+
+After applying `000001_enable_postgis.sql`, apply the farm schema:
+
+```sh
+docker compose exec -T db psql -v ON_ERROR_STOP=1 -U farmland -d farmland < migrations/000002_starter_farms.sql
+```
+
+The schema holds one starter plot per Firebase UID, its wheat inventory and
+revision, and successful command receipts for safe retries.
