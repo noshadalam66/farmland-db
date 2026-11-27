@@ -51,3 +51,6 @@ successful harvest commands for ranking.
 
 Apply `000013_starter_town.sql` for the initial road and cottage records.
 Their construction timestamps are the source for server-time population.
+
+Apply `000014_town_services.sql` to permit water towers, workshops, schools,
+and clinics in the existing town and command tables.
