@@ -24,3 +24,9 @@ docker compose exec -T db psql -v ON_ERROR_STOP=1 -U farmland -d farmland < migr
 
 The schema holds one starter plot per Firebase UID, its wheat inventory and
 revision, and successful command receipts for safe retries.
+
+## World selection migration
+
+Apply `000003_world_requests.sql` after the starter farm migration. It stores
+one world selection per Firebase account and indexes queued generation requests.
+Coordinates represent the center of the selected area in WGS 84.
