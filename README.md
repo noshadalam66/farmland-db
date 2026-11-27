@@ -45,3 +45,6 @@ and pending breeding reservations.
 
 Apply `000011_grain_mill.sql` to store the mill, its active batch, flour
 inventory, and mill and flour entries in the wallet ledger.
+
+Apply `000012_harvest_leaderboard.sql` to store opt-in settings and index
+successful harvest commands for ranking.
