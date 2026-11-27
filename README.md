@@ -42,3 +42,6 @@ milk and egg inventory.
 
 Apply `000010_breeding.sql` to store animal sex, parent IDs, maturation,
 and pending breeding reservations.
+
+Apply `000011_grain_mill.sql` to store the mill, its active batch, flour
+inventory, and mill and flour entries in the wallet ledger.
