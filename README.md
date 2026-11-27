@@ -30,3 +30,6 @@ revision, and successful command receipts for safe retries.
 Apply `000003_world_requests.sql` after the starter farm migration. It stores
 one world selection per Firebase account and indexes queued generation requests.
 Coordinates represent the center of the selected area in WGS 84.
+
+Apply `000004_terrain_generation.sql` next. It adds worker leases and records
+the completed artifact or failure for each request.
