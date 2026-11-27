@@ -33,3 +33,6 @@ sale references its successful farm command receipt.
 
 Apply `000007_farm_expansion.sql` for the pilot expansion plot, plot-aware
 command receipts, and parcel purchase debits.
+
+Apply `000008_livestock.sql` to store individually identified goats and
+chickens and track animal purchase debits.
