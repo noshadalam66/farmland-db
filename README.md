@@ -57,3 +57,11 @@ and clinics in the existing town and command tables.
 
 Apply `000015_town_orders.sql` for daily settlement supply order receipts
 and wallet payouts. A unique index enforces one completion per offer per UTC day.
+
+### Phase 2 database acceptance
+
+After applying the migrations, run
+`psql "$DATABASE_URL" -f checks/phase-two.sql` against the acceptance database.
+The check exercises the saved world lifecycle and verifies that duplicate
+worlds, missing leases, and missing artifacts are rejected. Its writes roll
+back at the end.
